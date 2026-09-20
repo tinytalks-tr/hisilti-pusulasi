@@ -1,0 +1,19 @@
+{
+  "name": "Hışıltı Pusulası",
+  "short_name": "Hışıltı",
+  "description": "Hışıltısı olan okul öncesi çocuklarda astım riskini ailelere sade dille anlatan ücretsiz araç.",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F1E8",
+  "theme_color": "#F7F1E8",
+  "categories": ["health", "medical", "education"],
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
