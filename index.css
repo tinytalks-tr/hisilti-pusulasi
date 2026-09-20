@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+html, body { background: #F7F1E8; }
+
+body {
+  margin: 0;
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: #2D3142;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+
+.nokta-gir { animation: nokta .32s ease-out both; }
+@keyframes nokta { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+
+.kart-gir { animation: kart .38s cubic-bezier(.22,1,.36,1) both; }
+@keyframes kart { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
