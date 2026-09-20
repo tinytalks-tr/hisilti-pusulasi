@@ -8,3 +8,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+// Çevrimdışı çalışma: servis çalışanını kaydet.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {
+      /* kayıt başarısız olursa uygulama normal çalışmaya devam eder */
+    })
+  })
+}
